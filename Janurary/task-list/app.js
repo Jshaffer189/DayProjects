@@ -1,28 +1,30 @@
-const todoList = [];
-const doneList = [];
+// TODO JS
 
+// array of active and inactive tasks
+const taskArray = [];
+const completedArray = [];
+
+// select input element
 const task = document.querySelector('input');
 
 task.addEventListener('keyup', function(event) {
+	// Enter Key
 	if (event.keyCode === 13) {
-		moveTask(event);
+		pushTask(event);
 	}
 });
 
 // push array function
-const moveTask = (todo) => {
-	todoList.push(todo);
-	console.log(todoList);
+const pushTask = (input) => {
+	taskArray.push(input.target.value);
+	console.log(taskArray);
+	task.value = '';
 };
 
-// loop through an array
+// loop through an array and create unordered list
 const taskLoop = (array) => {
 	// loop through each array element
 	// append with a html element create
+	for (let item of array) {
+	}
 };
-
-// TODO JS
-// clear input after enter
-
-// TODO HTML
-// append li and ul
