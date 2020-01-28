@@ -2,7 +2,6 @@
 
 // array of active and inactive tasks
 const taskArray = [];
-const completedArray = [];
 
 // select input element
 const task = document.querySelector('input');
@@ -28,3 +27,5 @@ const taskLoop = (array) => {
 	for (let item of array) {
 	}
 };
+
+taskLoop(taskArray);
